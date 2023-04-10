@@ -27,6 +27,7 @@ class Juridica( Pessoa ):
                 print("--------------------")
 
         def __str__(self):
-            texto = "Nome: " + self.nome
+            texto = "Empresa: " + self.nome
             texto += "\nFone: " + self.fone
+            texto += "\nCNPJ: " + self.cnpj
             return texto

@@ -7,4 +7,11 @@ class Fisica( Pessoa ):
         super().__init__( nome, fone, cidade)
         self.cpf = cpf
         self.empresa = empresa
-    
+
+    def imprimir(self):
+        super().imprimir()
+        print("CPF: ", self.cpf)
+        print("Empresa: ", self.empresa.nome)
+
+    def __str__(self):
+        return super().__str__() + "\nCPF: " + self.cpf
